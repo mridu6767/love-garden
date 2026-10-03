@@ -1,0 +1,84 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="theme-color" content="#fff3f7">
+<title>Our Little Love Garden ♡</title>
+<style>
+:root{--pink:#e67f9f;--dark:#8c4560;--ink:#593d49;--cream:#fffaf7;--pale:#fff0f5;--line:#f0cad6;--green:#63866e}*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;min-height:100vh;color:var(--ink);font-family:Georgia,'Times New Roman',serif;background:linear-gradient(145deg,#fff7fa,#ffe6ef 48%,#fff8f3);overflow-x:hidden}button,a,textarea{font:inherit}button{cursor:pointer}.garden{max-width:980px;margin:auto;padding:24px 18px 80px}.topline{display:flex;justify-content:center;gap:12px;color:#bd7189;font-size:22px;animation:bob 2.4s ease-in-out infinite}.hero,.panel,.final{position:relative;border:1px solid var(--line);border-radius:30px;background:#fffaf7ed;box-shadow:0 18px 50px #a64f6d18}.hero{text-align:center;padding:clamp(30px,7vw,74px) 24px;margin:14px auto 28px;overflow:hidden}.hero:before,.hero:after{content:'♡';position:absolute;color:#f3c0d0;font-size:60px;animation:float 4s ease-in-out infinite}.hero:before{left:7%;top:16%}.hero:after{right:8%;bottom:12%;animation-delay:1.4s}h1{font-size:clamp(38px,8vw,70px);font-weight:500;color:var(--dark);margin:8px 0 16px}.kicker{font:600 12px Arial,sans-serif;letter-spacing:.18em;text-transform:uppercase;color:#b36d83}.hero p{font-size:18px;line-height:1.6;max-width:600px;margin:0 auto 24px}.primary,.soft-button{border:0;border-radius:999px;padding:13px 22px;background:var(--pink);color:white;font:700 15px Arial,sans-serif;box-shadow:0 8px 20px #d66f9140;transition:transform .2s,background .2s}.primary:hover,.soft-button:hover{transform:translateY(-3px);background:#d9678a}.panel{padding:clamp(22px,5vw,40px);margin:22px 0;scroll-margin-top:18px}.panel h2,.final h2{margin:5px 0 8px;color:var(--dark);font-size:clamp(26px,5vw,38px);font-weight:500}.sub{color:#866773;line-height:1.6;margin:0 0 20px}.bouquets{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.bouquet-box{border:1px solid #f3d5de;border-radius:22px;padding:18px;background:linear-gradient(145deg,#fff8fa,#fffefb)}.bouquet-box h3{color:var(--dark);margin:0 0 5px}.picked{min-height:47px;border-radius:16px;background:#fff0f5;padding:10px;margin:12px 0;color:#a65370;font-size:25px;letter-spacing:3px}.flower-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:8px}.flower{border:1px solid #efccd7;border-radius:14px;background:#fff;color:var(--ink);padding:9px 5px;font-size:13px;transition:.2s}.flower span{display:block;font-size:26px;margin-bottom:3px}.flower.selected{outline:3px solid #e897af;background:#fff0f5;transform:translateY(-2px)}.tiny{font-size:11px;color:#9c7481;margin:8px 0}.notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:16px}.note-card{padding:18px;border:1px solid #f1d0da;border-radius:22px;background:#fff8fa}.note-card h3{margin:0 0 10px;color:var(--dark)}textarea{display:block;width:100%;min-height:130px;resize:vertical;border:1px solid #e8bfcd;border-radius:15px;background:#fffefd;padding:13px;color:var(--ink);line-height:1.5;outline-color:var(--pink)}.seal-note{margin-top:10px;border:1px solid #e7b8c8;background:white;color:var(--dark);border-radius:99px;padding:9px 14px;font-weight:bold}.sealed{display:none;margin-top:12px;padding:13px;border-radius:15px;background:#fff0f5;color:var(--dark);white-space:pre-wrap;line-height:1.5;animation:pop .35s both}.sealed.show{display:block}.song-list{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:12px}.song{display:flex;flex-direction:column;align-items:flex-start;gap:8px;border:1px solid #efcbd7;border-radius:19px;background:#fff;padding:16px;color:var(--ink);text-align:left;transition:.2s}.song.selected{outline:3px solid #e897af;background:#fff1f5}.song .disc{font-size:30px}.song strong{color:var(--dark)}.song a{color:#a14e69;font:600 13px Arial,sans-serif}.song a:hover{text-decoration:none}.song .pick{font-size:12px;color:#987481}.question{text-align:center;min-height:265px;display:grid;align-content:center}.question h3{font-size:clamp(24px,5vw,34px);font-weight:500;color:var(--dark);margin:12px auto 22px;max-width:670px}.answers{display:flex;justify-content:center;gap:12px;flex-wrap:wrap}.answer{border:1px solid #e8b7c8;border-radius:99px;background:#fff;padding:12px 19px;color:var(--dark);font-weight:bold}.answer:first-child{background:var(--pink);border-color:var(--pink);color:#fff}.answer-message{min-height:28px;margin:20px 0 0;color:#a14e69;font-weight:bold;font-size:18px}.final{display:none;text-align:center;padding:clamp(26px,6vw,52px);overflow:hidden;animation:pop .6s both}.final.show{display:block}.bouquet-art{font-size:clamp(42px,10vw,85px);letter-spacing:4px;line-height:1.35;margin:16px auto;animation:bob 2.3s ease-in-out infinite}.final-notes{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px;text-align:left;margin:18px 0}.final-note{padding:16px;border:1px dashed #e3a5b8;border-radius:18px;background:#fff3f7;white-space:pre-wrap;line-height:1.5}.floating{position:fixed;bottom:-35px;pointer-events:none;z-index:5;animation:rise 4s ease-out forwards}.bows{position:fixed;inset:0;pointer-events:none;z-index:0;overflow:hidden}.bows span{position:absolute;opacity:.55;animation:twinkle 2.5s ease-in-out infinite alternate}.garden>*{position:relative;z-index:1}footer{text-align:center;color:#a27b88;font-size:13px;margin:25px 0}@keyframes rise{to{transform:translate(var(--dx),-110vh) rotate(24deg);opacity:0}}@keyframes float{50%{transform:translateY(-9px) rotate(9deg)}}@keyframes bob{50%{transform:translateY(-5px)}}@keyframes pop{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}@keyframes twinkle{to{transform:rotate(20deg) scale(1.2);opacity:.9}}@media(max-width:700px){.bouquets,.notes{grid-template-columns:1fr}.song-list{grid-template-columns:1fr}.song{flex-direction:row;align-items:center}.song .pick{margin-left:auto}.flower-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.final-notes{grid-template-columns:1fr}}@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;scroll-behavior:auto!important;transition-duration:.01ms!important}}
+</style>
+</head>
+<body>
+<div class="bows" aria-hidden="true"><span style="left:8%;top:14%;font-size:30px">🎀</span><span style="right:9%;top:27%;font-size:26px">🧸</span><span style="left:4%;top:68%;font-size:28px">✿</span><span style="right:4%;top:76%;font-size:32px">🎀</span></div>
+<main class="garden">
+  <div class="topline" aria-hidden="true">🎀　♡　🧸　♡　🌷</div>
+  <header class="hero">
+    <p class="kicker">a little date in our own garden</p>
+    <h1>Our Love Garden ♡</h1>
+    <p>Let’s pick flowers for each other, tuck tiny notes into the bouquet, choose our song, and answer a few very important questions 💌</p>
+    <button class="primary" id="startButton">Let’s go on our flower date 🌷</button>
+  </header>
+
+  <section class="panel" id="flowers">
+    <p class="kicker">step one · the bouquet</p><h2>Pick flowers for each other</h2>
+    <p class="sub">Take turns, cutie! Choose up to four flowers for each bouquet. Tap a flower again to unpick it.</p>
+    <div class="bouquets">
+      <div class="bouquet-box"><h3>Your bouquet for me 💗</h3><div class="picked" id="forMe" aria-live="polite">waiting for flowers…</div><div class="flower-grid" data-bouquet="forMe"></div><p class="tiny">Pick something that reminds you of me 🌼</p></div>
+      <div class="bouquet-box"><h3>My bouquet for you 💌</h3><div class="picked" id="forYou" aria-live="polite">waiting for flowers…</div><div class="flower-grid" data-bouquet="forYou"></div><p class="tiny">I’m picking all your favourite ones, baby 🌷</p></div>
+    </div>
+  </section>
+
+  <section class="panel" id="notes">
+    <p class="kicker">step two · tiny letters</p><h2>Leave little love notes</h2>
+    <p class="sub">Write one for each other, then tap “Fold my note” to tuck it into the bouquet. Notes save only in this browser; copy one if you want to send it.</p>
+    <div class="notes">
+      <div class="note-card"><h3>A note from me to you 🧸</h3><textarea id="noteToYou" maxlength="500" placeholder="My sweet boy, I love when…" aria-label="Write a note from me to you"></textarea><button class="seal-note" data-note="noteToYou">Fold my note 💌</button><div class="sealed" id="sealedToYou" aria-live="polite"></div></div>
+      <div class="note-card"><h3>Your note back to me 🎀</h3><textarea id="noteToMe" maxlength="500" placeholder="My favourite girl, you make me…" aria-label="Write a note back to me"></textarea><button class="seal-note" data-note="noteToMe">Fold your note 💌</button><div class="sealed" id="sealedToMe" aria-live="polite"></div></div>
+    </div>
+  </section>
+
+  <section class="panel" id="songs">
+    <p class="kicker">step three · our soundtrack</p><h2>Pick a song for our date 🎶</h2>
+    <p class="sub">Choose the one that feels like us. Tap “Listen” to open it on Spotify.</p>
+    <div class="song-list">
+      <article class="song" data-song="Until I Found You — Stephen Sanchez"><span class="disc">🎧</span><div><strong>Until I Found You</strong><br><span>Stephen Sanchez</span></div><a href="https://open.spotify.com/track/197fwmOmWyrQgczB51wzgJ" target="_blank" rel="noopener">Listen ♫</a><button class="pick" type="button">Pick this song</button></article>
+      <article class="song" data-song="Perfect — Ed Sheeran"><span class="disc">💿</span><div><strong>Perfect</strong><br><span>Ed Sheeran</span></div><a href="https://open.spotify.com/track/0tgVpDi06FyKpA1z0VMD4v" target="_blank" rel="noopener">Listen ♫</a><button class="pick" type="button">Pick this song</button></article>
+      <article class="song" data-song="Can’t Help Falling in Love — Elvis Presley"><span class="disc">🎼</span><div><strong>Can’t Help Falling in Love</strong><br><span>Elvis Presley</span></div><a href="https://open.spotify.com/track/4iKWkYttDQEfxqiB2mST6i" target="_blank" rel="noopener">Listen ♫</a><button class="pick" type="button">Pick this song</button></article>
+    </div>
+    <p class="tiny" id="songChoice" aria-live="polite">We haven’t picked our song yet 💞</p>
+  </section>
+
+  <section class="panel question" id="questions">
+    <p class="kicker">step four · very serious questions</p>
+    <p class="tiny" id="questionCount">question 1 of 3</p>
+    <h3 id="questionText">Would you save me the last bite of dessert? 🍰</h3>
+    <div class="answers" id="answers"><button class="answer" data-reply="yes">Always, baby 💗</button><button class="answer" data-reply="no">I might steal it 🙈</button></div>
+    <p class="answer-message" id="answerMessage" aria-live="polite"></p>
+  </section>
+
+  <section class="final" id="finale" aria-live="polite">
+    <p class="kicker">our date is officially perfect</p><h2>Look at our pretty bouquet 🥹</h2>
+    <div class="bouquet-art" id="finalFlowers">🌷🌼🌹</div>
+    <p id="finalSong"></p>
+    <div class="final-notes"><div class="final-note" id="finalNoteToYou"></div><div class="final-note" id="finalNoteToMe"></div></div>
+    <p style="font-size:24px;color:var(--dark)">I love doing life with you ♡</p>
+    <button class="primary" id="restart">Make another bouquet ↻</button>
+  </section>
+  <footer>made with petals, bows, and a whole lot of love ♡</footer>
+</main>
+<script>
+const flowerOptions=[['🌹','Rose'],['🌷','Tulip'],['🌼','Daisy'],['🌻','Sunflower'],['🪻','Lavender'],['🌸','Cherry blossom']];
+const bouquets={forMe:[],forYou:[]};
+document.querySelectorAll('.flower-grid').forEach(grid=>{const who=grid.dataset.bouquet;flowerOptions.forEach(([emoji,name])=>{const b=document.createElement('button');b.type='button';b.className='flower';b.innerHTML=`<span aria-hidden="true">${emoji}</span>${name}`;b.setAttribute('aria-pressed','false');b.addEventListener('click',()=>{const at=bouquets[who].findIndex(f=>f.name===name);if(at>=0){bouquets[who].splice(at,1);b.classList.remove('selected');b.setAttribute('aria-pressed','false')}else if(bouquets[who].length<4){bouquets[who].push({emoji,name});b.classList.add('selected');b.setAttribute('aria-pressed','true')}else{const box=b.closest('.bouquet-box');box.querySelector('.tiny').textContent='Four flowers fit in this tiny bouquet 🌷';setTimeout(()=>box.querySelector('.tiny').textContent='Pick something that reminds you of me 🌼',1800)}updateBouquets()});grid.appendChild(b)})});
+function updateBouquets(){for(const id of ['forMe','forYou'])document.getElementById(id).textContent=bouquets[id].length?bouquets[id].map(f=>f.emoji).join(' '):'waiting for flowers…'}
+document.getElementById('startButton').addEventListener('click',()=>document.getElementById('flowers').scrollIntoView({behavior:'smooth'}));
+document.querySelectorAll('.seal-note').forEach(button=>button.addEventListener('click',()=>{const key=button.dataset.note,value=document.getElementById(key).value.trim();const target=document.getElementById(key==='noteToYou'?'sealedToYou':'sealedToMe');target.textContent=value?`💌 “${value}”`: 'Write a tiny note first, sweetheart 💗';target.classList.add('show');if(value)floaties('💌',7)}));
+let chosenSong='';document.querySelectorAll('.song .pick').forEach(button=>button.addEventListener('click',()=>{document.querySelectorAll('.song').forEach(s=>s.classList.remove('selected'));const song=button.closest('.song');song.classList.add('selected');chosenSong=song.dataset.song;document.getElementById('songChoice').textContent=`Our date song: ${chosenSong} ♡`;floaties('🎵',6)}));
+const qs=[['Would you save me the last bite of dessert? 🍰',['Always, baby 💗','I might steal it 🙈'],['I knew you were a sweetheart 🥹','I’m hiding the dessert from you now 😤']],['Can I borrow your clothes and keep them forever? 👗',['Of course, baby 💞','No, those are mine 🙈'],['EHEHE, your closet is mine now 😈','Too late, I’m borrowing them anyway 💅']],['Can I get emergency cuddles whenever I ask? 🧸',['Yes, always 🤗','Every single time 💗'],['That’s literally my favourite job 🥹','Correct answer, my baby 💋']]];let qi=0;document.querySelectorAll('.answer[data-reply]').forEach((button,index)=>button.addEventListener('click',()=>{if(qi>=qs.length)return;document.getElementById('answerMessage').textContent=qs[qi][2][index]+' 💕';floaties(index?'💗':'💋',9);qi++;setTimeout(()=>{if(qi<qs.length){document.getElementById('questionCount').textContent=`question ${qi+1} of ${qs.length}`;document.getElementById('questionText').textContent=qs[qi][0];const buttons=[...document.querySelectorAll('.answer[data-reply]')];buttons.forEach((b,i)=>b.textContent=qs[qi][1][i]);document.getElementById('answerMessage').textContent=''}else showFinal()},850)}));
+function showFinal(){document.getElementById('questions').style.display='none';document.getElementById('finalFlowers').textContent=[...bouquets.forMe,...bouquets.forYou].map(f=>f.emoji).join(' ')||'🌷 🌼 🌹';document.getElementById('finalSong').textContent=chosenSong?`Our chosen song: ${chosenSong} 🎶`:'Our song is waiting for us to pick it 🎶';document.getElementById('finalNoteToYou').textContent='💌 For you: '+(document.getElementById('noteToYou').value.trim()||'A tiny note is still waiting to be written ♡');document.getElementById('finalNoteToMe').textContent='💌 For me: '+(document.getElementById('noteToMe').value.trim()||'Your reply can go here, cutie ♡');document.getElementById('finale').classList.add('show');document.getElementById('finale').scrollIntoView({behavior:'smooth'});floaties('🌸',18)}
+function floaties(symbol,count){for(let i=0;i<count;i++){const f=document.createElement('span');f.className='floating';f.textContent=symbol;f.style.left=(Math.random()*94)+'vw';f.style.fontSize=(20+Math.random()*24)+'px';f.style.setProperty('--dx',`${Math.random()*50-25}vw`);document.body.appendChild(f);f.addEventListener('animationend',()=>f.remove(),{once:true})}}
+document.getElementById('restart').addEventListener('click',()=>location.reload());setInterval(()=>floaties(['♡','🌸','🎀','💗','🧸'][Math.floor(Math.random()*5)],1),2300);
+</script>
+</body>
+</html>
